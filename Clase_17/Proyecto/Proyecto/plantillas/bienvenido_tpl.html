@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comision 57810</title>
+</head>
+<body>
+    <h1>Esta es la clase 18 de python - django</h1>
+    <h2>DTL Es el lenguaje de django para plantillas</h2>
+    <h2>Hoy es {{hoyy}} </h2>    
+    <h2>nombre {{nombre}} {{apellido}} </h2>
+    <h3>Nos quedan 7 clases de Django</h3>
+    <p>Recomendacion: Ver algun tutorial de html / css</p>
+
+    <h2>notas de {{apellido}} </h2>
+    
+    {% for nota  in notas  %}
+    
+    {% if nota > 6 %}
+        <p style="color: green;">Es una aprobada: {{nota}} </p>
+    {% else %}
+            <p style="color: red;">Es una desaprobada: {{nota}} </p>
+    {% endif %}
+        
+
+        <p style="color: blue;"> {{nota}} </p>
+    {% endfor %}
+        
+</body>
+</html>
